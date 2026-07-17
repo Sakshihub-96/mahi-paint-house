@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Sanjog Adhesives</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 8 L15 4 L15 30 L4 26 Z" fill="#6B4A30"/>
+        <path d="M30 8 L19 4 L19 30 L30 26 Z" fill="#2E2116"/>
+        <path d="M15 16 Q17 13 19 16 Q17 19 15 16 Z" fill="#C77B2C"/>
+      </svg>
+      Sanjog
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="container">
+    <span class="eyebrow">Get in touch</span>
+    <h1>Ask us, or find a dealer nearby</h1>
+    <p class="page-sub">Have a question about which formula fits your job, or want to know where to buy? Send us a note.</p>
+  </div>
+</header>
+
+<section class="contact-section">
+  <div class="container grid-2" style="align-items:flex-start;">
+    <form class="contact-form card">
+      <h3>Send a message</h3>
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" required placeholder="Your full name">
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" required placeholder="you@example.com">
+      </label>
+      <label>
+        <span>What are you working with?</span>
+        <select name="material">
+          <option>Wood</option>
+          <option>Fabric</option>
+          <option>Paper &amp; craft</option>
+          <option>Industrial / metal</option>
+          <option>Not sure</option>
+        </select>
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="4" required placeholder="Tell us what you're trying to bond..."></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary">Send message</button>
+      <p class="form-note"></p>
+    </form>
+
+    <div class="contact-info">
+      <div class="card">
+        <h3>Head office</h3>
+        <p>Sanjog Adhesives Pvt. Ltd.<br>Industrial Estate, Kanpur, Uttar Pradesh</p>
+        <div class="spec-row"><span>Phone</span><span class="mono">+91 (0) 512 000 0000</span></div>
+        <div class="spec-row"><span>Email</span><span class="mono">hello@sanjogadhesives.example</span></div>
+        <div class="spec-row"><span>Hours</span><span class="mono">Mon–Sat, 9am–6pm</span></div>
+      </div>
+      <div class="card" style="margin-top:1.5rem;">
+        <h3>Find a dealer</h3>
+        <p>Sanjog products are stocked at hardware and craft stores in 28 states. Tell your local dealer which formula you need, and they'll have it or order it in.</p>
+        <span class="tag">28 states covered</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Sanjog Adhesives</h4>
+        <p>Bonds for wood, fabric, paper, and everything in between. Made in India since 1974.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="contact.html">Contact us</a>
+        <a href="contact.html">Find a dealer</a>
+      </div>
+      <div>
+        <h4>Workshop tips</h4>
+        <a href="index.html">How a bond forms</a>
+        <a href="products.html">Choosing the right glue</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sanjog Adhesives — a fictional brand made for a portfolio project.</span>
+      <span>Made with care.</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+.page-head { padding: 3.5rem 0 1rem; }
+.page-head .container { max-width: 720px; }
+.page-sub { color: var(--wood-mid); font-size: 1.05rem; }
+
+.contact-form label {
+  display: block;
+  margin-bottom: 1.1rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--wood-mid);
+}
+.contact-form label span { display: block; margin-bottom: 6px; }
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  font-family: var(--body);
+  font-size: 0.95rem;
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper-dim);
+  color: var(--ink);
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--amber);
+  outline-offset: 1px;
+}
+.form-note {
+  margin-top: 1rem;
+  font-size: 0.86rem;
+  color: var(--forest);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.form-note.visible { opacity: 1; }
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  padding: 7px 0;
+  border-top: 1px solid var(--line);
+  color: var(--wood-mid);
+}
+.spec-row .mono { font-family: var(--mono); color: var(--ink); }
+</style>
+
+<script src="script.js"></script>
+</body>
+</html>
